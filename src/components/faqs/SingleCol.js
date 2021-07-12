@@ -5,6 +5,8 @@ import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import { SectionHeading, Subheading as SubheadingBase } from "components/misc/Headings.js";
 import { SectionDescription } from "components/misc/Typography.js";
+import Header from "components/headers/light.js";
+import Footer from "components/footers/FiveColumnWithInputForm.js";
 import { Container, ContentWithPaddingXl } from "components/misc/Layouts.js";
 import { ReactComponent as ChevronDownIcon } from "feather-icons/dist/icons/chevron-down.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "images/svg-decorator-blob-7.svg";
@@ -74,6 +76,7 @@ export default ({
 
   return (
     <Container>
+    <Header />
       <ContentWithPaddingXl>
         <Column>
           <HeaderContent>
@@ -122,6 +125,7 @@ export default ({
       </ContentWithPaddingXl>
       <DecoratorBlob1/>
       <DecoratorBlob2 />
+      <Footer />
     </Container>
   );
 };
