@@ -11,6 +11,8 @@ import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
+import guides from "../../guides.js"
+
 
 import "slick-carousel/slick/slick.css";
 
@@ -67,9 +69,9 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "",
-  heading = "Testimonials",
+  heading = "User Guides",
   description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  testimonials = null,
+  testimonials = guides,
   textOnLeft = false
 }) => {
   /*

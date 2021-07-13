@@ -24,7 +24,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  * separately
  */
 
- import UserGuide from "components/features/Documentation.js";
+ import UserGuide from "demos/UserGuide.js";
  import FAQ from "components/faqs/SingleCol.js";
  import DownloadApp from "components/cta/DownloadApp.js";
  import Mobile from "demos/MobilePage.js";
