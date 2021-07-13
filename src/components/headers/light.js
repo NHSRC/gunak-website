@@ -87,7 +87,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     defaultLinks = [
       <NavLinks key={1}>
         {path === "/docs" ? <CurrentNavLink href="../docs">User Guide</CurrentNavLink> : <NavLink href="../docs">User Guide</NavLink>}
-        {path === "/mobile" ? <CurrentNavLink href="../mobile">Mobile</CurrentNavLink> : <NavLink href="../mobile">Mobile</NavLink>}
+        {path === "/mobile" ? <CurrentNavLink href="../mobile">Mobile App</CurrentNavLink> : <NavLink href="../mobile">Mobile App</NavLink>}
         {path === "/dashboard" ? <CurrentNavLink href="../dashboard">Dashboard</CurrentNavLink> : <NavLink href="../dashboard">Dashboard</NavLink>}
         <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="../mobile">Get Started</PrimaryLink>
       </NavLinks>
@@ -97,7 +97,7 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
     defaultLinks = [
       <NavLinks key={1}>
         <NavLink href="../docs">User Guide</NavLink>
-        <NavLink href="../mobile">Mobile</NavLink>
+        <NavLink href="../mobile">Mobile App</NavLink>
         <NavLink href="../dashboard">Dashboard</NavLink>
         <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="../mobile">Get Started</PrimaryLink>
       </NavLinks>

@@ -57,10 +57,10 @@ const CardMetaFeature = styled.div`
 const CardAction = tw(PrimaryButtonBase)`w-full mt-6`;
 
 export default ({
-  subheading = "Our Portfolio",
+  subheading = "Technology",
   headingHtmlComponent = (
     <>
-      We've done some <span tw="text-primary-500">amazing projects.</span>
+      Look at the technology behind <span tw="text-primary-500">Gunak.</span>
     </>
   ),
   description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",

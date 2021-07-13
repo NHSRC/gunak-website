@@ -78,7 +78,7 @@ export default () => {
   return (
     <Container>
       <ThreeColumnContainer>
-        <Heading>Our Professional <span tw="text-primary-500">Services</span></Heading>
+        <Heading>Programs supported by <span tw="text-primary-500">Gunak</span></Heading>
         {cards.map((card, i) => (
           <Column key={i}>
             <Card>

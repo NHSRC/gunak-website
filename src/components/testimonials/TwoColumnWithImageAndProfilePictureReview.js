@@ -11,7 +11,7 @@ import { ReactComponent as ChevronLeftIcon } from "feather-icons/dist/icons/chev
 import { ReactComponent as ChevronRightIcon } from "feather-icons/dist/icons/chevron-right.svg";
 import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-blob-4.svg";
 import { ReactComponent as SvgDecoratorBlob2 } from "../../images/svg-decorator-blob-5.svg";
-import guides from "../../guides.js"
+//import guides from "../../guides.js"
 
 
 import "slick-carousel/slick/slick.css";
@@ -71,7 +71,7 @@ export default ({
   subheading = "",
   heading = "User Guides",
   description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  testimonials = guides,
+  testimonials = "",
   textOnLeft = false
 }) => {
   /*
@@ -110,7 +110,7 @@ export default ({
   return (
     <Container>
       <Content>
-        <HeadingInfo tw="text-center lg:hidden" subheading={subheading} heading={heading} description={description} />
+      <HeadingInfo tw="text-center lg:hidden" subheading={subheading} heading={heading} description={description} />
         <TestimonialsContainer>
           <Testimonials>
             <Testimonial>

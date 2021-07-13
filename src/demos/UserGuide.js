@@ -15,7 +15,7 @@ export default () => {
   return (
     <AnimationRevealPage disabled>
       <Header />
-      <GuideCard />
+      <GuideCard testimonials={guides}/>
       <Footer />
     </AnimationRevealPage>
   );

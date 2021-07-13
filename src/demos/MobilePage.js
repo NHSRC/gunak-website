@@ -2,11 +2,13 @@ import React from "react";
 import tw from "twin.macro";
 import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
+import Hero from "components/hero/TwoColumnWithVideo.js";
 import Programs from "components/features/DashedBorderSixFeatures.js"
 import Features from "components/features/ThreeColWithSideImage.js";
-import Technology from "components/cards/PortfolioTwoCardsWithImage.js"
+// import Technology from "components/cards/PortfolioTwoCardsWithImage.js"
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
+import Download from "components/cta/DownloadApp.js"
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -15,7 +17,6 @@ export default () => {
   return (
     <AnimationRevealPage disabled>
       <Header />
-      <Programs />
       <Features
         subheading={<Subheading>Features</Subheading>}
         heading={
@@ -24,7 +25,9 @@ export default () => {
           </>
         }
       />
-      <Technology />
+      <Download />
+      <Hero primaryButtonText="UserGuide" primaryButtonUrl="/docs">
+      </Hero>
       <Footer />
     </AnimationRevealPage>
   );
