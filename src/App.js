@@ -24,7 +24,7 @@ import { css } from "styled-components/macro"; //eslint-disable-line
  * separately
  */
 
- import Blog from "components/features/Documentation.js";
+ import UserGuide from "components/features/Documentation.js";
  import FAQ from "components/faqs/SingleCol.js";
  import DownloadApp from "components/cta/DownloadApp.js";
  import Mobile from "demos/MobilePage.js";
@@ -59,7 +59,7 @@ export default function App() {
             <FAQ />
         </Route>
         <Route exact path="/docs">
-            <Blog />
+            <UserGuide />
         </Route>
         <Route exact path="/download">
             <DownloadApp />

@@ -26,6 +26,13 @@ export const NavLink = tw.a`
   pb-1 border-b-2 border-transparent hover:border-primary-500 hocus:text-primary-500
 `;
 
+export const CurrentNavLink = tw.a`
+  text-lg my-2 lg:text-sm lg:mx-6 lg:my-0
+  font-semibold tracking-wide transition duration-300
+  pb-1 border-b-2 border-transparent border-primary-500 hocus:text-primary-500
+`;
+
+
 export const PrimaryLink = tw(NavLink)`
   lg:mx-0
   px-8 py-3 rounded bg-primary-500 text-gray-100
@@ -56,6 +63,8 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
+
+
 export default ({ roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg" }) => {
   /*
    * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
@@ -70,15 +79,33 @@ export default ({ roundedHeaderButton = false, logoLink, links, className, colla
    * changing the defaultLinks variable below below.
    * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
    */
-  const defaultLinks = [
-    <NavLinks key={1}>
-      <NavLink href="../docs">User Guide</NavLink>
-      <NavLink href="../mobile">Mobile</NavLink>
-      <NavLink href="../dashboard">Dashboard</NavLink>
 
-      <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="../mobile">Get Started</PrimaryLink>
-    </NavLinks>
-  ];
+  console.log("window.location.pathname", window.location.pathname);
+  let path = window.location.pathname;
+  let defaultLinks = [];
+  if (path != "/") {
+    defaultLinks = [
+      <NavLinks key={1}>
+        {path === "/docs" ? <CurrentNavLink href="../docs">User Guide</CurrentNavLink> : <NavLink href="../docs">User Guide</NavLink>}
+        {path === "/mobile" ? <CurrentNavLink href="../mobile">Mobile</CurrentNavLink> : <NavLink href="../mobile">Mobile</NavLink>}
+        {path === "/dashboard" ? <CurrentNavLink href="../dashboard">Dashboard</CurrentNavLink> : <NavLink href="../dashboard">Dashboard</NavLink>}
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="../mobile">Get Started</PrimaryLink>
+      </NavLinks>
+    ];
+  }
+  else {
+    defaultLinks = [
+      <NavLinks key={1}>
+        <NavLink href="../docs">User Guide</NavLink>
+        <NavLink href="../mobile">Mobile</NavLink>
+        <NavLink href="../dashboard">Dashboard</NavLink>
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`}href="../mobile">Get Started</PrimaryLink>
+      </NavLinks>
+    ];
+  }
+
+
+  console.log("defaultlinks", defaultLinks);
 
   const { showNavLinks, animation, toggleNavbar } = useAnimatedNavToggler();
   const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
