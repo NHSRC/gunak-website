@@ -7,7 +7,7 @@ const guides = [
     quote:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
     customerName: "Pradipta",
-    customerTitle: "CEO, Samanvay Inc."
+    customerTitle: "CEO, Delos Inc."
   },
   {
     imageSrc:
@@ -16,7 +16,7 @@ const guides = [
       "https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2.25&w=512&h=512&q=80",
     quote:
       "Sinor Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.",
-    customerName: "VIVEK SINGH",
+    customerName: "Vivek",
     customerTitle: "Founder, EventsNYC"
   }
 ];

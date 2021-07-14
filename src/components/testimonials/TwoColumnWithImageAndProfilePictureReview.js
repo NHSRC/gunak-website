@@ -69,8 +69,8 @@ const DecoratorBlob2 = tw(
 
 export default ({
   subheading = "",
-  heading = "User Guides",
-  description = "Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  heading = "",
+  description = "",
   testimonials = "",
   textOnLeft = false
 }) => {
@@ -136,18 +136,11 @@ export default ({
                     <TestimonialText key={index}>
                       <QuoteContainer>
                         <Quote>
-                          <QuotesLeft />
+
                           {testimonial.quote}
-                          <QuotesRight />
+
                         </Quote>
                       </QuoteContainer>
-                      <CustomerInfo>
-                        <CustomerProfilePicture src={testimonial.profileImageSrc} alt={testimonial.customerName} />
-                        <CustomerTextInfo>
-                          <CustomerName>{testimonial.customerName}</CustomerName>
-                          <CustomerTitle>{testimonial.customerTitle}</CustomerTitle>
-                        </CustomerTextInfo>
-                      </CustomerInfo>
                     </TestimonialText>
                   ))}
                 </TestimonialTextSlider>

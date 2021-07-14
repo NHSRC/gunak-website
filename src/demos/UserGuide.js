@@ -4,7 +4,8 @@ import { css } from "styled-components/macro"; //eslint-disable-line
 import AnimationRevealPage from "helpers/AnimationRevealPage.js";
 import Header from "components/headers/light.js";
 import Footer from "components/footers/SimpleFiveColumn.js";
-import guides from "../guides.js"
+//import guides from "../guides.js"
+import topics from "../topics.js"
 
 import GuideCard from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js"
 
@@ -15,7 +16,9 @@ export default () => {
   return (
     <AnimationRevealPage disabled>
       <Header />
-      <GuideCard testimonials={guides}/>
+      {topics.map((topic, index) => (
+        <GuideCard heading={topic.heading} description={topic.description} testimonials={topic.steps} />
+      ))}
       <Footer />
     </AnimationRevealPage>
   );
