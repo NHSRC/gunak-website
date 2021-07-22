@@ -7,7 +7,7 @@ import Programs from "components/features/DashedBorderSixFeatures.js"
 import Features from "components/features/ThreeColWithSideImage.js";
 import Technology from "components/cards/PortfolioTwoCardsWithImage.js"
 import Footer from "components/footers/SimpleFiveColumn.js";
-import gunakfeatures from "../gunakfeatures.js"
+import gunakFeatures from "../gunakfeatures.js"
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -16,7 +16,7 @@ export default () => {
   return (
     <AnimationRevealPage disabled>
       <Header />
-      <Hero primaryButtonUrl="/mobile"/>
+      <Hero primaryButtonUrl="/mobile" heading={"Gunak - National health facilities assessment platform"} description={"Designed for all hospital administration, state health department, and quality assessors"} primaryButtonText={"Download Mobile App"} watchVideoButtonText={"How it Works"}/>
       <Programs />
       <Features
         subheading={<Subheading>Features</Subheading>}
@@ -25,7 +25,7 @@ export default () => {
             We have Amazing <HighlightedText>Service.</HighlightedText>
           </>
         }
-        cards={gunakfeatures}
+        cards={gunakFeatures}
       />
       <Technology />
       <Footer />
