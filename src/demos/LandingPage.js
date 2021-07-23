@@ -37,10 +37,9 @@ export default () => {
             <Features
                 subheading={<Subheading>Features</Subheading>}
                 heading={
-                    <>
-                        We have Amazing <HighlightedText>Service.</HighlightedText>
-                    </>
+                    <>Complete facilities assessment platform</>
                 }
+                description={"Quality assessment, Data collection, Analysis, Mentoring"}
                 cards={gunakFeatures}
             />
             <Technology/>
