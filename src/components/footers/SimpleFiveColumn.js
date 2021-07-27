@@ -65,17 +65,11 @@ export default () => {
                     <ColumnHeading>Quick Links</ColumnHeading>
                     <LinkList>
                         <LinkListItem>
-                            <Link href="#">NHSRC</Link>
+                            <Link href="https://www.mohfw.gov.in/" target="_blank">Ministry of Health, India</Link>
                         </LinkListItem>
                         <LinkListItem>
-                            <Link href="#">Ministry of Health, India</Link>
+                            <Link href="https://nhsrcindia.org/" target="_blank">NHSRC, India</Link>
                         </LinkListItem>
-                        <LinkListItem>
-                            <Link href="#">Support</Link>
-                        </LinkListItem>
-                        {/*<LinkListItem>*/}
-                        {/*  <Link href="#">About Us</Link>*/}
-                        {/*</LinkListItem>*/}
                     </LinkList>
                 </Column>
                 <Column>

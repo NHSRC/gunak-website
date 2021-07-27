@@ -1,7 +1,7 @@
 const topics = [
   {
-    heading: "User Guide - A",
-    description: "A-Here are what some of our amazing customers are saying about our hotels & tours. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    heading: "Submit assessment in a group",
+    description: "When there are multiple assessors, performing assessment of the same facility, they can divide multiple departments among themselves. In order to make this a single assessment",
     steps: [
       {
         imageSrc:
