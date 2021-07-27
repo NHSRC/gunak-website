@@ -11,6 +11,8 @@ import gunakFeatures from "../gunakfeatures.js"
 import ShieldIconImage from "../images/nqas.png";
 import Laqshya from "../images/laqshya.jpg";
 import CustomizeIconImage from "../images/kayakalp.png";
+import Github from "../images/github.png";
+import OpenSource from "../images/opensource.png";
 
 const cards = [
     {
@@ -19,8 +21,37 @@ const cards = [
         description: "National Quality Assurance Standards",
         link: "http://qi.nhsrcindia.org/national-quality-assurance-standards"
     },
-    {imageSrc: Laqshya, title: "LAQSHYA", description: "Labour Room Quality Improvement Initiative", link: "http://nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf"},
-    {imageSrc: CustomizeIconImage, title: "KAYAKALP", description: "Swacchta Guidelines for Public Health Facilities", link: "https://www.nhp.gov.in/kayakalp-swacchta-guidelines-for-public-health-facilities_pg"}
+    {
+        imageSrc: Laqshya,
+        title: "LAQSHYA",
+        description: "Labour Room Quality Improvement Initiative",
+        link: "http://nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf"
+    },
+    {
+        imageSrc: CustomizeIconImage,
+        title: "KAYAKALP",
+        description: "Swacchta Guidelines for Public Health Facilities",
+        link: "https://www.nhp.gov.in/kayakalp-swacchta-guidelines-for-public-health-facilities_pg"
+    }
+];
+
+const techCards = [
+    {
+        imageSrc: OpenSource,
+        company: "Tech Stack",
+        type: "",
+        title: "Java, ReactJS, React Native, PostgreSQL, Metabase, Linux",
+        durationText: "",
+        locationText: ""
+    },
+    {
+        imageSrc: Github,
+        company: "Source Code",
+        type: "",
+        title: "Fully available on Github",
+        durationText: "",
+        locationText: ""
+    }
 ];
 
 export default () => {
@@ -42,7 +73,8 @@ export default () => {
                 description={"Quality assessment, Data collection, Analysis, Mentoring"}
                 cards={gunakFeatures}
             />
-            <Technology/>
+            <Technology subheading="" headingHtmlComponent="Gunak Software" description="Gunak has been developed completely using open source frameworks and components."
+                        cards={techCards} cardLinkText="" linkText="Get Source Code" linkUrl="https://github.com/nhsrc"/>
             <Footer/>
         </AnimationRevealPage>
     );
