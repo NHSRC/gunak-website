@@ -1,12 +1,15 @@
 import React from "react";
 import tw from "twin.macro";
 import styled from "styled-components";
-import { css } from "styled-components/macro"; //eslint-disable-line
+import {css} from "styled-components/macro"; //eslint-disable-line
 
-import LogoImage from "../../images/logo.svg";
-import { ReactComponent as FacebookIcon } from "../../images/facebook-icon.svg";
-import { ReactComponent as TwitterIcon } from "../../images/twitter-icon.svg";
-import { ReactComponent as YoutubeIcon } from "../../images/youtube-icon.svg";
+import LogoImage from "../../images/nqas.png";
+import {ReactComponent as FacebookIcon} from "../../images/facebook-icon.svg";
+import {ReactComponent as GithubIcon} from "../../images/github-icon.svg";
+import {ReactComponent as GooglePlayIcon} from "../../images/Google_Play_Arrow_logo.svg";
+import {ReactComponent as AppStoreIcon} from "../../images/App_Store_(iOS).svg";
+import {ReactComponent as TwitterIcon} from "../../images/twitter-icon.svg";
+import {ReactComponent as YoutubeIcon} from "../../images/youtube-icon.svg";
 
 const Container = tw.div`relative bg-gray-200 -mx-8 -mb-8 px-8`;
 const FiveColumns = tw.div`max-w-screen-xl mx-auto py-16 lg:py-20 flex flex-wrap justify-between`;
@@ -35,81 +38,81 @@ const SocialLink = styled.a`
 `;
 
 export default () => {
-  return (
-    <Container>
-      <FiveColumns>
-        <WideColumn>
-          <LogoContainer>
-            <LogoImg src={LogoImage} />
-            <LogoText>Treact Inc.</LogoText>
-          </LogoContainer>
-          <CompanyDescription>
-            Treact is an Internet Technology company providing design resources such as website templates and themes.
-          </CompanyDescription>
-          <SocialLinksContainer>
-            <SocialLink href="https://facebook.com">
-              <FacebookIcon />
-            </SocialLink>
-            <SocialLink href="https://twitter.com">
-              <TwitterIcon />
-            </SocialLink>
-            <SocialLink href="https://youtube.com">
-              <YoutubeIcon />
-            </SocialLink>
-          </SocialLinksContainer>
-        </WideColumn>
-        <Column>
-          <ColumnHeading>Quick Links</ColumnHeading>
-          <LinkList>
-            <LinkListItem>
-              <Link href="#">Blog</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">FAQs</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Support</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">About Us</Link>
-            </LinkListItem>
-          </LinkList>
-        </Column>
-        <Column>
-          <ColumnHeading>Product</ColumnHeading>
-          <LinkList>
-            <LinkListItem>
-              <Link href="#">Log In</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Personal</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Business</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Team</Link>
-            </LinkListItem>
-          </LinkList>
-        </Column>
-        <Column>
-          <ColumnHeading>Legal</ColumnHeading>
-          <LinkList>
-            <LinkListItem>
-              <Link href="#">GDPR</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Privacy Policy</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Terms of Service</Link>
-            </LinkListItem>
-            <LinkListItem>
-              <Link href="#">Disclaimer</Link>
-            </LinkListItem>
-          </LinkList>
-        </Column>
-      </FiveColumns>
-    </Container>
-  );
+    return (
+        <Container>
+            <FiveColumns>
+                <WideColumn>
+                    <LogoContainer>
+                        <LogoImg src={LogoImage}/>
+                        <LogoText>Gunak</LogoText>
+                    </LogoContainer>
+                    <CompanyDescription>
+                        Gunak has been developed by NHSRC for Ministry of Health India
+                    </CompanyDescription>
+                    <SocialLinksContainer>
+                        <SocialLink href="https://github.com/nhsrc" target="_blank">
+                            <GithubIcon/>
+                        </SocialLink>
+                        <SocialLink href="https://play.google.com/store/apps/details?id=com.facilitiesassessment" target="_blank">
+                            <GooglePlayIcon/>
+                        </SocialLink>
+                        <SocialLink href="https://apps.apple.com/in/app/gunak/id1354891968">
+                            <AppStoreIcon/>
+                        </SocialLink>
+                    </SocialLinksContainer>
+                </WideColumn>
+                <Column>
+                    <ColumnHeading>Quick Links</ColumnHeading>
+                    <LinkList>
+                        <LinkListItem>
+                            <Link href="#">NHSRC</Link>
+                        </LinkListItem>
+                        <LinkListItem>
+                            <Link href="#">Ministry of Health, India</Link>
+                        </LinkListItem>
+                        <LinkListItem>
+                            <Link href="#">Support</Link>
+                        </LinkListItem>
+                        {/*<LinkListItem>*/}
+                        {/*  <Link href="#">About Us</Link>*/}
+                        {/*</LinkListItem>*/}
+                    </LinkList>
+                </Column>
+                <Column>
+                    <ColumnHeading>Product</ColumnHeading>
+                    <LinkList>
+                        <LinkListItem>
+                            <Link href="https://play.google.com/store/apps/details?id=com.facilitiesassessment" target="_blank">Google Play</Link>
+                        </LinkListItem>
+                        <LinkListItem>
+                            <Link href="https://apps.apple.com/in/app/gunak/id1354891968" target="_blank">Apple App Store</Link>
+                        </LinkListItem>
+                        <LinkListItem>
+                            <Link href="https://gunak.nhsrcindia.org/dashboard/index.html" target="_blank">State Dashboard</Link>
+                        </LinkListItem>
+                        <LinkListItem>
+                            <Link href="https://github.com/nhsrc" target="_blank">Github</Link>
+                        </LinkListItem>
+                    </LinkList>
+                </Column>
+                <Column>
+                    {/*<ColumnHeading>Legal</ColumnHeading>*/}
+                    {/*<LinkList>*/}
+                    {/*    <LinkListItem>*/}
+                    {/*        <Link href="#">GDPR</Link>*/}
+                    {/*    </LinkListItem>*/}
+                    {/*    <LinkListItem>*/}
+                    {/*        <Link href="#">Privacy Policy</Link>*/}
+                    {/*    </LinkListItem>*/}
+                    {/*    <LinkListItem>*/}
+                    {/*        <Link href="#">Terms of Service</Link>*/}
+                    {/*    </LinkListItem>*/}
+                    {/*    <LinkListItem>*/}
+                    {/*        <Link href="#">Disclaimer</Link>*/}
+                    {/*    </LinkListItem>*/}
+                    {/*</LinkList>*/}
+                </Column>
+            </FiveColumns>
+        </Container>
+    );
 };
