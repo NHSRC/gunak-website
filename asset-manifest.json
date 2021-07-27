@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gunak-website/static/css/main.def877c0.chunk.css",
-    "main.js": "/gunak-website/static/js/main.39de36ed.chunk.js",
-    "main.js.map": "/gunak-website/static/js/main.39de36ed.chunk.js.map",
+    "main.js": "/gunak-website/static/js/main.03c1a916.chunk.js",
+    "main.js.map": "/gunak-website/static/js/main.03c1a916.chunk.js.map",
     "runtime-main.js": "/gunak-website/static/js/runtime-main.55d5f822.js",
     "runtime-main.js.map": "/gunak-website/static/js/runtime-main.55d5f822.js.map",
     "static/css/2.792fcacf.chunk.css": "/gunak-website/static/css/2.792fcacf.chunk.css",
@@ -55,6 +55,6 @@
     "static/css/2.792fcacf.chunk.css",
     "static/js/2.ed9f0155.chunk.js",
     "static/css/main.def877c0.chunk.css",
-    "static/js/main.39de36ed.chunk.js"
+    "static/js/main.03c1a916.chunk.js"
   ]
 }
