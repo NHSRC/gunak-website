@@ -13,24 +13,24 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App() {
     return (
-        <Router>
+        <Router basename={process.env.PUBLIC_URL}>
             <Switch>
-                <Route exact path="/faqs">
+                <Route path="/faqs">
                     <FAQ/>
                 </Route>
-                <Route exact path="/docs">
+                <Route path="/docs">
                     <UserGuide/>
                 </Route>
-                <Route exact path="/download">
+                <Route path="/download">
                     <DownloadApp/>
                 </Route>
-                <Route exact path="/mobile">
+                <Route path="/mobile">
                     <Mobile/>
                 </Route>
-                <Route exact path="/dashboard">
+                <Route path="/dashboard">
                     <Dashboard/>
                 </Route>
-                <Route exact path="/">
+                <Route path="/">
                     <LandingPage/>
                 </Route>
             </Switch>
