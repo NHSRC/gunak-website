@@ -2,7 +2,6 @@ import React from "react";
 import {motion} from "framer-motion";
 import tw from "twin.macro";
 import styled from "styled-components";
-import {css} from "styled-components/macro"; //eslint-disable-line
 
 import useAnimatedNavToggler from "../../helpers/useAnimatedNavToggler.js";
 
@@ -68,28 +67,11 @@ const linkDetails = [{name: "User Guide", link: "docs"}, {name: "Mobile", link: 
 
 export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg"}) => {
     let path = window.location.pathname;
-    let defaultLinks = [];
-    if (path !== "/") {
-        defaultLinks = [
-            <NavLinks key={1}>
-                {path === "/docs" ? <CurrentNavLink href="./docs">User Guide2</CurrentNavLink> : <NavLink href="#/docs">User Guide</NavLink>}
-                {path === "/mobile" ? <CurrentNavLink href="../mobile">Mobile App</CurrentNavLink> : <NavLink href="../mobile">Mobile App</NavLink>}
-                {path === "/dashboard" ? <CurrentNavLink href="../dashboard">Dashboard</CurrentNavLink> : <NavLink href="../dashboard">Dashboard</NavLink>}
-                <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="../mobile">Get Started</PrimaryLink>
-            </NavLinks>
-        ];
-    } else {
-        defaultLinks = [
-            <NavLinks key={1}>
-                <NavLink href="docs">User Guide1</NavLink>
-                <NavLink href="../mobile">Mobile App</NavLink>
-                <NavLink href="../dashboard">Dashboard</NavLink>
-                <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="../mobile">Get Started</PrimaryLink>
-            </NavLinks>
-        ];
-    }
-
-    console.log("defaultlinks", defaultLinks);
+    let defaultLinks = [<NavLinks key={1}>
+        {linkDetails.map((x) => path.includes(x.link) ? <CurrentNavLink href={`#/${x.link}`}>{x.name}</CurrentNavLink> :
+            <NavLink href={`#/${x.link}`}>{x.name}</NavLink>)}
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="../mobile">Get Started</PrimaryLink>
+    </NavLinks>];
 
     const {showNavLinks, animation, toggleNavbar} = useAnimatedNavToggler();
     const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
