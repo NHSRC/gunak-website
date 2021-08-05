@@ -63,6 +63,8 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
+const Heading = tw.h1`font-black text-3xl md:text-4xl leading-snug max-w-3xl`;
+
 const linkDetails = [{name: "User Guide", link: "docs"}, {name: "Mobile", link: "mobile"}, {name: "Dashboard", link: "dashboard"}];
 
 export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg"}) => {
@@ -79,6 +81,7 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
     const defaultLogoLink = (
         <LogoLink href={process.env.PUBLIC_URL}>
             <img src={logo} alt="logo"/>
+            <Heading>Gunak Platform</Heading>
         </LogoLink>
     );
 
