@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gunak-website/static/css/main.def877c0.chunk.css",
-    "main.js": "/gunak-website/static/js/main.f2675b3a.chunk.js",
-    "main.js.map": "/gunak-website/static/js/main.f2675b3a.chunk.js.map",
+    "main.js": "/gunak-website/static/js/main.c37a4940.chunk.js",
+    "main.js.map": "/gunak-website/static/js/main.c37a4940.chunk.js.map",
     "runtime-main.js": "/gunak-website/static/js/runtime-main.55d5f822.js",
     "runtime-main.js.map": "/gunak-website/static/js/runtime-main.55d5f822.js.map",
     "static/css/2.792fcacf.chunk.css": "/gunak-website/static/css/2.792fcacf.chunk.css",
@@ -27,8 +27,11 @@
     "static/media/fast-icon.dbb971a7.svg": "/gunak-website/static/media/fast-icon.dbb971a7.svg",
     "static/media/github-icon.2012dbb2.svg": "/gunak-website/static/media/github-icon.2012dbb2.svg",
     "static/media/github.451477d4.png": "/gunak-website/static/media/github.451477d4.png",
+    "static/media/groupAssessmentStart.32fcda13.png": "/gunak-website/static/media/groupAssessmentStart.32fcda13.png",
+    "static/media/groupAssessmentSubmit.168e959a.png": "/gunak-website/static/media/groupAssessmentSubmit.168e959a.png",
     "static/media/kayakalp.4eff0227.png": "/gunak-website/static/media/kayakalp.4eff0227.png",
     "static/media/laqshya.4d208169.jpg": "/gunak-website/static/media/laqshya.4d208169.jpg",
+    "static/media/launchAddState.41d77507.png": "/gunak-website/static/media/launchAddState.41d77507.png",
     "static/media/logo.2c489fc4.svg": "/gunak-website/static/media/logo.2c489fc4.svg",
     "static/media/map-pin.svg": "/gunak-website/static/media/map-pin.8c41fcd3.svg",
     "static/media/menu.svg": "/gunak-website/static/media/menu.644fa295.svg",
@@ -36,6 +39,7 @@
     "static/media/quotes-l.075e0fe3.svg": "/gunak-website/static/media/quotes-l.075e0fe3.svg",
     "static/media/quotes-r.4ac4f654.svg": "/gunak-website/static/media/quotes-r.4ac4f654.svg",
     "static/media/reliable-icon.1367510a.svg": "/gunak-website/static/media/reliable-icon.1367510a.svg",
+    "static/media/selectAndSaveState.27187f83.png": "/gunak-website/static/media/selectAndSaveState.27187f83.png",
     "static/media/shield-icon.daefe14b.svg": "/gunak-website/static/media/shield-icon.daefe14b.svg",
     "static/media/simple-icon.673b7e17.svg": "/gunak-website/static/media/simple-icon.673b7e17.svg",
     "static/media/support-icon.f9253ffa.svg": "/gunak-website/static/media/support-icon.f9253ffa.svg",
@@ -55,6 +59,6 @@
     "static/css/2.792fcacf.chunk.css",
     "static/js/2.a0ddd048.chunk.js",
     "static/css/main.def877c0.chunk.css",
-    "static/js/main.f2675b3a.chunk.js"
+    "static/js/main.c37a4940.chunk.js"
   ]
 }
