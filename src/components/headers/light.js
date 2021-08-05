@@ -77,7 +77,7 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
     const collapseBreakpointCss = collapseBreakPointCssMap[collapseBreakpointClass];
 
     const defaultLogoLink = (
-        <LogoLink href="/">
+        <LogoLink href={process.env.PUBLIC_URL}>
             <img src={logo} alt="logo"/>
         </LogoLink>
     );

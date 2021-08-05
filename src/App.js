@@ -17,9 +17,6 @@ export default function App() {
         // <Router>
         <Router basename={process.env.PUBLIC_URL}>
             <Switch>
-                <Route path="/faqs">
-                    <FAQ/>
-                </Route>
                 <Route path={`/docs`}>
                     <UserGuide/>
                 </Route>
