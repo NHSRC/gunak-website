@@ -66,7 +66,7 @@ export const DesktopNavLinks = tw.nav`
 const linkDetails = [{name: "User Guide", link: "docs"}, {name: "Mobile", link: "mobile"}, {name: "Dashboard", link: "dashboard"}];
 
 export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg"}) => {
-    let path = window.location.pathname;
+    let path = window.location.hash;
     let defaultLinks = [<NavLinks key={1}>
         {linkDetails.map((x) => path.includes(x.link) ? <CurrentNavLink href={`#/${x.link}`}>{x.name}</CurrentNavLink> :
             <NavLink href={`#/${x.link}`}>{x.name}</NavLink>)}
