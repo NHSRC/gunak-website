@@ -9,7 +9,7 @@ import Mobile from "demos/MobilePage.js";
 import Dashboard from "demos/DashboardPage.js";
 
 import LandingPage from "demos/LandingPage.js";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {HashRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App() {
     console.log("process.env.PUBLIC_URL", process.env.PUBLIC_URL);
@@ -20,7 +20,7 @@ export default function App() {
                 <Route path="/faqs">
                     <FAQ/>
                 </Route>
-                <Route path={`/docs`} exact>
+                <Route path={`/docs`}>
                     <UserGuide/>
                 </Route>
                 <Route path="/download">

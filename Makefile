@@ -4,8 +4,11 @@ start:
 install:
 	yarn install
 
-start-apache-local:
+start-apache:
 	sudo apachectl restart
+
+edit-apache-conf:
+	sudo vi /etc/apache2/httpd.conf
 
 local_website_dir := /Library/WebServer/Documents/gunak-website
 

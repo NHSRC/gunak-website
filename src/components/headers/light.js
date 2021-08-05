@@ -64,27 +64,15 @@ export const DesktopNavLinks = tw.nav`
   hidden lg:flex flex-1 justify-between items-center
 `;
 
+const linkDetails = [{name: "User Guide", link: "docs"}, {name: "Mobile", link: "mobile"}, {name: "Dashboard", link: "dashboard"}];
 
 export default ({roundedHeaderButton = false, logoLink, links, className, collapseBreakpointClass = "lg"}) => {
-    /*
-     * This header component accepts an optionals "links" prop that specifies the links to render in the navbar.
-     * This links props should be an array of "NavLinks" components which is exported from this file.
-     * Each "NavLinks" component can contain any amount of "NavLink" component, also exported from this file.
-     * This allows this Header to be multi column.
-     * So If you pass only a single item in the array with only one NavLinks component as root, you will get 2 column header.
-     * Left part will be LogoLink, and the right part will be the the NavLinks component you
-     * supplied.
-     * Similarly if you pass 2 items in the links array, then you will get 3 columns, the left will be "LogoLink", the center will be the first "NavLinks" component in the array and the right will be the second "NavLinks" component in the links array.
-     * You can also choose to directly modify the links here by not passing any links from the parent component and
-     * changing the defaultLinks variable below below.
-     * If you manipulate links here, all the styling on the links is already done for you. If you pass links yourself though, you are responsible for styling the links or use the helper styled components that are defined here (NavLink)
-     */
     let path = window.location.pathname;
     let defaultLinks = [];
     if (path !== "/") {
         defaultLinks = [
             <NavLinks key={1}>
-                {path === "/docs" ? <CurrentNavLink href="./docs">User Guide2</CurrentNavLink> : <NavLink href="docs">User Guide3</NavLink>}
+                {path === "/docs" ? <CurrentNavLink href="./docs">User Guide2</CurrentNavLink> : <NavLink href="#/docs">User Guide</NavLink>}
                 {path === "/mobile" ? <CurrentNavLink href="../mobile">Mobile App</CurrentNavLink> : <NavLink href="../mobile">Mobile App</NavLink>}
                 {path === "/dashboard" ? <CurrentNavLink href="../dashboard">Dashboard</CurrentNavLink> : <NavLink href="../dashboard">Dashboard</NavLink>}
                 <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="../mobile">Get Started</PrimaryLink>
