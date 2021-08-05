@@ -8,6 +8,7 @@ import Footer from "components/footers/SimpleFiveColumn.js";
 import topics from "../topics.js"
 
 import GuideCard from "components/testimonials/TwoColumnWithImageAndProfilePictureReview.js"
+import GetStarted from "../components/cta/GetStarted";
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
@@ -19,6 +20,7 @@ export default () => {
       {topics.map((topic, index) => (
         <GuideCard heading={topic.heading} description={topic.description} testimonials={topic.steps} />
       ))}
+        <GetStarted text="Need more help, contact technical support" primaryLinkText="Report an issue" primaryLinkUrl="https://gunaknhsrc.freshdesk.com/support/tickets/new" secondaryLinkText="Contact NHSRC"/>
       <Footer />
     </AnimationRevealPage>
   );

@@ -72,7 +72,7 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
     let defaultLinks = [<NavLinks key={1}>
         {linkDetails.map((x) => path.includes(x.link) ? <CurrentNavLink href={`#/${x.link}`}>{x.name}</CurrentNavLink> :
             <NavLink href={`#/${x.link}`}>{x.name}</NavLink>)}
-        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="../mobile">Get Started</PrimaryLink>
+        <PrimaryLink css={roundedHeaderButton && tw`rounded-full`} href="#/mobile">Get Started</PrimaryLink>
     </NavLinks>];
 
     const {showNavLinks, animation, toggleNavbar} = useAnimatedNavToggler();

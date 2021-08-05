@@ -62,7 +62,7 @@ export default () => {
         <AnimationRevealPage disabled>
             <Header/>
             <Hero primaryButtonUrl="/mobile" heading={"Gunak - National health facilities assessment platform"}
-                  description={"Designed for all hospital administration, state health department, and quality assessors"} primaryButtonText={"Download Mobile App"}
+                  description={"Designed for hospital administration, state health department, and quality assessors"} primaryButtonText={"Download Mobile App"}
                   watchVideoButtonText={"How it Works"}/>
             <Programs cards={cards}/>
             <Features
