@@ -14,3 +14,6 @@ deploy-local:
 	-rm -rf $(local_website_dir)
 	mkdir $(local_website_dir)
 	cp -r build/* $(local_website_dir)/
+
+deploy-to-gh-pages:
+	yarn run deploy

@@ -12,13 +12,15 @@ import LandingPage from "demos/LandingPage.js";
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 
 export default function App() {
+    console.log("process.env.PUBLIC_URL", process.env.PUBLIC_URL);
     return (
+        // <Router>
         <Router basename={process.env.PUBLIC_URL}>
             <Switch>
                 <Route path="/faqs">
                     <FAQ/>
                 </Route>
-                <Route path="/docs">
+                <Route path={`/docs`} exact>
                     <UserGuide/>
                 </Route>
                 <Route path="/download">
@@ -30,7 +32,7 @@ export default function App() {
                 <Route path="/dashboard">
                     <Dashboard/>
                 </Route>
-                <Route path="/">
+                <Route path="/" exact>
                     <LandingPage/>
                 </Route>
             </Switch>
