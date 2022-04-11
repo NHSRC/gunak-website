@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gunak-website/static/css/main.def877c0.chunk.css",
-    "main.js": "/gunak-website/static/js/main.9ef09ebd.chunk.js",
-    "main.js.map": "/gunak-website/static/js/main.9ef09ebd.chunk.js.map",
+    "main.js": "/gunak-website/static/js/main.ffebdba0.chunk.js",
+    "main.js.map": "/gunak-website/static/js/main.ffebdba0.chunk.js.map",
     "runtime-main.js": "/gunak-website/static/js/runtime-main.55d5f822.js",
     "runtime-main.js.map": "/gunak-website/static/js/runtime-main.55d5f822.js.map",
     "static/css/2.792fcacf.chunk.css": "/gunak-website/static/css/2.792fcacf.chunk.css",
@@ -37,7 +37,6 @@
     "static/media/7-1-downloadReport.0e46c2c4.png": "/gunak-website/static/media/7-1-downloadReport.0e46c2c4.png",
     "static/media/App_Store_(iOS).a8ee14d3.svg": "/gunak-website/static/media/App_Store_(iOS).a8ee14d3.svg",
     "static/media/Google_Play_Arrow_logo.3041f828.svg": "/gunak-website/static/media/Google_Play_Arrow_logo.3041f828.svg",
-    "static/media/Gunak-Main.c62bf858.png": "/gunak-website/static/media/Gunak-Main.c62bf858.png",
     "static/media/arrow-right-icon.c4ea6a92.svg": "/gunak-website/static/media/arrow-right-icon.c4ea6a92.svg",
     "static/media/chevron-down.svg": "/gunak-website/static/media/chevron-down.c3e123cf.svg",
     "static/media/chevron-left.svg": "/gunak-website/static/media/chevron-left.982a40d4.svg",
@@ -82,6 +81,6 @@
     "static/css/2.792fcacf.chunk.css",
     "static/js/2.a809b145.chunk.js",
     "static/css/main.def877c0.chunk.css",
-    "static/js/main.9ef09ebd.chunk.js"
+    "static/js/main.ffebdba0.chunk.js"
   ]
 }
