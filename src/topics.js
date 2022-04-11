@@ -24,6 +24,15 @@ import asPerMeansOfVerification from "./images/guide/full/4-1-asPerMeansOfVerifi
 import remarks from "./images/guide/full/4-2-remarks.png";
 import completionOfME from "./images/guide/full/4-3-completionOfME.png";
 
+import checkAssessmentCompletion from "./images/guide/full/5-1-checkAssessmentCompletion.png";
+import checkAssessmentCompletionDepartments from "./images/guide/full/5-2-checkAssessmentCompletionDepartments.png";
+import checkReports from "./images/guide/full/5-3-checkReports.png";
+
+import fillAssessmentSubmissionDetails from "./images/guide/full/6-1-fillAssessmentSubmissionDetails.png";
+import submitAssessment from "./images/guide/full/6-2-submitAssessment.png";
+
+import downloadReport from "./images/guide/full/7-1-downloadReport.png";
+
 const topics = [
     {
         heading: "Step 1: Selection of State/UTs",
@@ -124,6 +133,52 @@ const topics = [
         ]
     },
     {
+        heading: "Step 5: Complete Assessment",
+        description: "",
+        steps: [
+            {
+                imageSrc: checkAssessmentCompletion,
+                quote: "Check the status of the ongoing assessment. You can see the Assessment status (100% complete). Name and Type of facility is also mentioned."
+            },
+            {
+                imageSrc: checkAssessmentCompletionDepartments,
+                quote: "Check for all department if they are assessed. Assessment status must be 100% before completion of assessment."
+            },
+            {
+                imageSrc: checkAssessmentCompletionDepartments,
+                quote: "Tap COMPLETE ASSESSMENT. The scorecard will generate automatically. Submission of assessment will only be possible after generation of scorecard."
+            },
+            {
+                imageSrc: checkReports,
+                quote: "Check for all Area of Concern, Department and Standards by shuffling among them simply by clicking the options."
+            }
+        ]
+    },
+    {
+        heading: "Step 6: Submit Assessment",
+        description: "This step will remain same for all three LaQshya, MusQan and Kayakalp assessments also.",
+        steps: [
+            {
+                imageSrc: fillAssessmentSubmissionDetails,
+                quote: "Generation of Scorecard lead to activation of SUBMIT ASSESSMENT button. You can enter an assessment number for your own reference or use the generated reference number."
+            },
+            {
+                imageSrc: submitAssessment,
+                quote: "Check for all department if they are assessed. Assessment status must be 100% before completion of assessment. Assessment can also be submitted by going on ONGOING tab."
+            }
+        ]
+    },
+    {
+        heading: "Step 7: Sharing of report",
+        description: "As per SOPs all the assessment reports need to be submitted to respective state consultant at NHSRC, New Delhi and RRC-NE. Once you click on Complete Assessment, scorecard will generate automatically.",
+        steps: [
+            {
+                imageSrc: downloadReport,
+                quote: "On the upper right corner, you can see Export/Download button. By clicking on download option, a drop-down list showing this screen. Export area of concern wise, Department wise, Standard wise or whole checklist. This file can be shared in the form of .csv & .png via Email I.D with the concerned authority. After download the share application option will be shown."
+            }
+        ]
+    },
+    {
         heading: "Submit assessment in a group",
         description: "When there are multiple assessors, performing assessment of the same facility, you can divide multiple departments among yourself and still create single assessment. Please follow the steps below to understand how this can be done",
         steps: [
@@ -132,7 +187,7 @@ const topics = [
                 quote: "All assessors must choose same facility, assessment tool, and assessment type (i.e. internal, state, external etc)"
             },
             {
-                imageSrc: groupAssessmentSubmit,
+                imageSrc: submitAssessment,
                 quote: "When submitting the assessment the users must enter the same unique number. Hint: you can follow year-number/year-month-number format. If you are doing assessment in March 2021 then the numbers could be 2021-01/2021-03-01 respectively."
             }]
     },
