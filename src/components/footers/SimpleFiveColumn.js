@@ -44,10 +44,10 @@ export default () => {
                 <WideColumn>
                     <LogoContainer>
                         <LogoImg src={LogoImage}/>
-                        <LogoText>Gunak</LogoText>
+                        <LogoText>GUNAK</LogoText>
                     </LogoContainer>
                     <CompanyDescription>
-                        Gunak has been developed by NHSRC for Ministry of Health India
+                        GUNAK has been developed by NHSRC for Ministry of Health India
                     </CompanyDescription>
                     <SocialLinksContainer>
                         <SocialLink href="https://github.com/nhsrc" target="_blank">

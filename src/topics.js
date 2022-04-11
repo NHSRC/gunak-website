@@ -192,7 +192,7 @@ const topics = [
     },
     {
         heading: "Download assessment tools and facilities list for another state",
-        description: "If you installed the Gunak application and chose one state and not if you want to perform assessment in another state, then you can follow the steps given below instead of reinstalling the app again.",
+        description: "If you installed the GUNAK application and chose one state and not if you want to perform assessment in another state, then you can follow the steps given below instead of reinstalling the app again.",
         steps: [
             {
                 imageSrc: launchAddState,

@@ -63,16 +63,16 @@ const techCards = [
     }
 ];
 
-export default () => {
+export default function() {
     const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
     const HighlightedText = tw.span`text-primary-500`;
 
     return (
         <AnimationRevealPage disabled>
             <Header/>
-            <Hero primaryButtonUrl="/mobile" heading={"GUNAK - Guide for NQAS and Kayakalp"}
+            <Hero primaryButtonUrl={"#/docs"} heading={"GUNAK - Guide for NQAS and Kayakalp"}
                   description={"Designed for Facility Staff, District, State, National teams and for Internal/External/Peer/ Surveillance Assessments"}
-                  primaryButtonText={"Download Mobile App"}
+                  primaryButtonText={"Open User Guide"}
                   watchVideoButtonText={"How it Works"}/>
             <Programs cards={cards}/>
             <ImageSlider />
@@ -84,7 +84,7 @@ export default () => {
                 description={"Quality assessment, Data collection, Analysis, Mentoring"}
                 cards={gunakFeatures}
             />
-            <Technology subheading="" headingHtmlComponent="GUNAK Software" description="Gunak has been developed completely using open source frameworks and components."
+            <Technology subheading="" headingHtmlComponent="GUNAK Software" description="GUNAK has been developed completely using open source frameworks and components."
                         cards={techCards} cardLinkText="" linkText="Get Source Code" linkUrl="https://github.com/nhsrc"/>
             <GetStarted text="Need more help, contact technical support" primaryLinkText="Report an issue"
                         primaryLinkUrl="https://gunaknhsrc.freshdesk.com/support/tickets/new" secondaryLinkText="Contact NHSRC"/>

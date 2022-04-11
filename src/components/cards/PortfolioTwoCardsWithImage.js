@@ -61,7 +61,7 @@ export default ({
                     subheading = "Technology",
                     headingHtmlComponent = (
                         <>
-                            About Gunak Technology <span tw="text-primary-500">Gunak.</span>
+                            About GUNAK Technology <span tw="text-primary-500">GUNAK.</span>
                         </>
                     ),
                     description = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua enim ad minim veniam.",
