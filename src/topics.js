@@ -15,6 +15,11 @@ import selectAssessmentType from "./images/guide/full/2-5-selectAssessmentType.p
 import startNewAssessment from "./images/guide/full/2-6-startNewAssessment.png";
 import newAssessmentMain from "./images/guide/full/2-7-newAssessmentMain.png";
 
+import canGenerateScoreCardAndSubmitAssessment from "./images/guide/full/3-1-canGenerateScoreCardAndSubmitAssessment.png";
+import areaOfConcerns from "./images/guide/full/3-2-areaOfConcerns.png";
+import standards from "./images/guide/full/3-3-standards.png";
+import checkpoints from "./images/guide/full/3-4-checkpoints.png";
+
 const topics = [
     {
         heading: "Step 1: Selection of State/UTs",
@@ -65,6 +70,36 @@ const topics = [
                 imageSrc: newAssessmentMain,
                 quote: "The app will take you a new Assessment with your selected parameters."
             }]
+    },
+    {
+        heading: "Step 3: Perform Assessment",
+        description: "",
+        steps: [
+            {
+                imageSrc: newAssessmentMain,
+                quote: "All the details of assessment are shown. Department wise preloaded checklist will be available for the assessment. Status of assessment will be updated on real-time basis."
+            },
+            {
+                imageSrc: canGenerateScoreCardAndSubmitAssessment,
+                quote: "On the lower part of the window GENERATE SCORECARD and SUBMIT ASSESSMENT"
+            },
+            {
+                imageSrc: newAssessmentMain,
+                quote: "Tap on department that need to be assessed. Department can be assessed in any sequence."
+            },
+            {
+                imageSrc: areaOfConcerns,
+                quote: "After the selection of department, a list showing all 8 Area of Concern, will appear."
+            },
+            {
+                imageSrc: standards,
+                quote: "Clicking on Area of concern will lead to window containing list of standards needs to be check."
+            },
+            {
+                imageSrc: checkpoints,
+                quote: "Further selection of Standards will lead you to the Checkpoints where compliance (i.e., 0,1,2) need to be mark. Compliance need to be mark by looking at Means of Verification, Remarks are mandatory to fill."
+            }
+        ]
     },
     {
         heading: "Submit assessment in a group",
