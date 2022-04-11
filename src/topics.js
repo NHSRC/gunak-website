@@ -26,7 +26,7 @@ const topics = [
             },
             {
                 imageSrc: downloadingStateData,
-                quote: "Download will start which you can see fromt the progress bar above the SAVE button"
+                quote: "Download will start which you can see from the progress bar above the SAVE button"
             },
             {
                 imageSrc: appHome,

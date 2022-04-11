@@ -28,8 +28,10 @@ const TestimonialText = tw.div`outline-none`;
 
 const ImageAndControlContainer = tw.div`relative outline-none`;
 const Image = styled.div(props => [
-  `background-image: url("${props.imageSrc}");`,
-  tw`rounded bg-cover bg-center h-80 sm:h-96 lg:h-144`
+    `background-image: url("${props.imageSrc}");`,
+    `background-size: contain;`,
+    `background-repeat: no-repeat;`,
+    tw`rounded bg-center h-80 sm:h-96 lg:h-144`
 ]);
 
 const ControlContainer = tw.div`absolute bottom-0 right-0 bg-gray-100 px-6 py-4 rounded-tl-3xl border`;
@@ -106,7 +108,7 @@ export default ({
                                     {steps.map((step, index) => (
                                         <TestimonialText key={index}>
                                             <QuoteContainer>
-                                                <Quote>{`${index+1}. ${step.quote}`}</Quote>
+                                                <Quote>{`${index + 1}. ${step.quote}`}</Quote>
                                             </QuoteContainer>
                                         </TestimonialText>
                                     ))}
