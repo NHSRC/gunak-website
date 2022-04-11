@@ -81,7 +81,7 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
     const defaultLogoLink = (
         <LogoLink href={process.env.PUBLIC_URL}>
             <img src={logo} alt="logo"/>
-            <Heading>Gunak Platform</Heading>
+            <Heading>GUNAK Platform</Heading>
         </LogoLink>
     );
 

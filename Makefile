@@ -4,7 +4,7 @@ start:
 install:
 	yarn install
 
-start-apache:
+restart-apache:
 	sudo apachectl restart
 
 edit-apache-conf:

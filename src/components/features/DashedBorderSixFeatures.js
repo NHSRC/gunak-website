@@ -61,15 +61,15 @@ export default ({cards}) => {
                 {cards.map((card, i) => (
                     <Column key={i}>
                         <Card>
-              <span className="imageContainer">
-                <img src={card.imageSrc || defaultCardImage} alt=""/>
-              </span>
-                <span className="textContainer">
-                    <a href={card.link} target="_blank"><span className="title">{card.title}</span></a>
-                <p className="description">
-                  {card.description}
-                </p>
-              </span>
+                            <span className="imageContainer">
+                                <a href={card.link} target="_blank"><img src={card.imageSrc || defaultCardImage} alt=""/></a>
+                            </span>
+                            <span className="textContainer">
+                                <a href={card.link} target="_blank"><span className="title">{card.title}</span></a>
+                                <p className="description">
+                                  {card.description}
+                                </p>
+                            </span>
                         </Card>
                     </Column>
                 ))}

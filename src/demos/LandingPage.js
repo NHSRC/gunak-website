@@ -9,8 +9,9 @@ import Technology from "components/cards/PortfolioTwoCardsWithImage.js"
 import Footer from "components/footers/SimpleFiveColumn.js";
 import gunakFeatures from "../gunakfeatures.js"
 import ShieldIconImage from "../images/nqas.png";
-import Laqshya from "../images/laqshya.jpg";
-import CustomizeIconImage from "../images/kayakalp.png";
+import Laqshya from "../images/laqshya.png";
+import Kayakalp from "../images/kayakalp.png";
+import Musqan from "../images/musqan.png";
 import Github from "../images/github.png";
 import OpenSource from "../images/opensource.png";
 
@@ -28,10 +29,16 @@ const cards = [
         link: "http://nhm.gov.in/New_Updates_2018/NHM_Components/RMNCH_MH_Guidelines/LaQshya-Guidelines.pdf"
     },
     {
-        imageSrc: CustomizeIconImage,
+        imageSrc: Kayakalp,
         title: "KAYAKALP",
         description: "Swacchta Guidelines for Public Health Facilities",
         link: "https://www.nhp.gov.in/kayakalp-swacchta-guidelines-for-public-health-facilities_pg"
+    },
+    {
+        imageSrc: Musqan,
+        title: "MusQan",
+        description: "Ensuring provision of timely, appropriate, quality and safe services to children",
+        link: "http://qi.nhsrcindia.org/cms-detail/musqan-initiative/MjQ4"
     }
 ];
 
@@ -61,8 +68,9 @@ export default () => {
     return (
         <AnimationRevealPage disabled>
             <Header/>
-            <Hero primaryButtonUrl="/mobile" heading={"Gunak - National health facilities assessment platform"}
-                  description={"Designed for hospital administration, state health department, and quality assessors"} primaryButtonText={"Download Mobile App"}
+            <Hero primaryButtonUrl="/mobile" heading={"GUNAK - Guide for NQAS and Kayakalp"}
+                  description={"Designed for Facility Staff, District, State, National teams and for Internal/External/Peer/ Surveillance Assessments"}
+                  primaryButtonText={"Download Mobile App"}
                   watchVideoButtonText={"How it Works"}/>
             <Programs cards={cards}/>
             <Features

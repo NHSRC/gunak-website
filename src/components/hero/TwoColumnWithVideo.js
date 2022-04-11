@@ -11,7 +11,7 @@ import {ReactComponent as PlayIcon} from "feather-icons/dist/icons/play-circle.s
 import {ReactComponent as CloseIcon} from "feather-icons/dist/icons/x.svg";
 import {ReactComponent as SvgDecoratorBlob1} from "../../images/svg-decorator-blob-1.svg";
 import {ReactComponent as SvgDecoratorBlob2} from "../../images/dot-pattern.svg";
-import DesignIllustration from "../../images/design-illustration.svg";
+import HeroImage from "../../images/hero.jpg";
 
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row md:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
@@ -63,7 +63,7 @@ export default ({
                     primaryButtonUrl = "#",
                     watchVideoButtonText = "Watch Video",
                     watchVideoYoutubeUrl = "https://www.youtube.com/embed/_GuOjXYl5ew",
-                    imageSrc = DesignIllustration,
+                    imageSrc = HeroImage,
                     imageCss = null,
                     imageDecoratorBlob = false,
                 }) => {
