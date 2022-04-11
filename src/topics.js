@@ -20,6 +20,10 @@ import areaOfConcerns from "./images/guide/full/3-2-areaOfConcerns.png";
 import standards from "./images/guide/full/3-3-standards.png";
 import checkpoints from "./images/guide/full/3-4-checkpoints.png";
 
+import asPerMeansOfVerification from "./images/guide/full/4-1-asPerMeansOfVerification.png";
+import remarks from "./images/guide/full/4-2-remarks.png";
+import completionOfME from "./images/guide/full/4-3-completionOfME.png";
+
 const topics = [
     {
         heading: "Step 1: Selection of State/UTs",
@@ -98,6 +102,24 @@ const topics = [
             {
                 imageSrc: checkpoints,
                 quote: "Further selection of Standards will lead you to the Checkpoints where compliance (i.e., 0,1,2) need to be mark. Compliance need to be mark by looking at Means of Verification, Remarks are mandatory to fill."
+            }
+        ]
+    },
+    {
+        heading: "Step 4: Marking of compliance",
+        description: "",
+        steps: [
+            {
+                imageSrc: asPerMeansOfVerification,
+                quote: "Compliance of each measuring elements under checkpoints must be filled as per guidelines. Means of verification need to be consider before marking compliance (0,1,2)."
+            },
+            {
+                imageSrc: remarks,
+                quote: "Remarks must be added as per SOPs, and it is mandatory to add."
+            },
+            {
+                imageSrc: completionOfME,
+                quote: "On marking all measuring elements of a particular standards click finish and proceed further"
             }
         ]
     },
