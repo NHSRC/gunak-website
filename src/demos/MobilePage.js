@@ -67,9 +67,10 @@ export default () => {
                 description=""
                 cards={cards}
             />
-            <Download subheading="" text="Download and install assessor's app" link1Url="https://apps.apple.com/in/app/gunak/id1354891968"
+            <Download subheading="" text="Download and install assessor's mobile app" link1Url="https://apps.apple.com/in/app/gunak/id1354891968"
                       link2Url="https://play.google.com/store/apps/details?id=com.facilitiesassessment"/>
-            <Hero primaryButtonText="User Guide" primaryButtonUrl="#/docs" description="GUNAK is simple to use but you can use the documentation to understand how it works" heading="How to use GUNAK Mobile App">
+            <Hero primaryButtonText="User Guide" primaryButtonUrl="#/docs"
+                  description="GUNAK is simple to use but you can use the documentation to understand how it works" heading="How to use GUNAK Mobile App">
             </Hero>
             <Footer/>
         </AnimationRevealPage>

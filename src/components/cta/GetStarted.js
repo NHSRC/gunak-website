@@ -26,8 +26,8 @@ export default ({
   text = "Developers all over the world are happily using Treact.",
   primaryLinkText = "Get Started",
   primaryLinkUrl = "https://gunak.nhsrcindia.org/dashboard/index.html",
-  secondaryLinkText = "Contact NHSRC",
-  secondaryLinkUrl = "http://google.com",
+  secondaryLinkText,
+  secondaryLinkUrl,
   pushDownFooter = true
 }) => {
   return (
@@ -40,7 +40,7 @@ export default ({
           </TextContainer>
           <LinksContainer>
             <PrimaryLink href={primaryLinkUrl} target="_blank">{primaryLinkText}</PrimaryLink>
-            <SecondaryLink href={secondaryLinkUrl} target="_blank">{secondaryLinkText}</SecondaryLink>
+              {secondaryLinkText && <SecondaryLink href={secondaryLinkUrl} target="_blank">{secondaryLinkText}</SecondaryLink>}
           </LinksContainer>
         </Row>
         <DecoratorBlobContainer>

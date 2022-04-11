@@ -61,7 +61,7 @@ export default () => {
                 description=""
                 cards={cards}
             />
-            <GetStarted text="Login to view your state's dashboard" primaryLinkText="Login" primaryLinkUrl="https://gunak.nhsrcindia.org/dashboard/index.html" secondaryLinkText="Request Account"/>
+            <GetStarted text="Login to view your state's dashboard" primaryLinkText="Login" primaryLinkUrl="https://gunak.nhsrcindia.org/dashboard/index.html"/>
             <Footer/>
         </AnimationRevealPage>
     );
