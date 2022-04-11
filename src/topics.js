@@ -1,7 +1,6 @@
 import launchAddState from "./images/guide/launchAddState.png";
 import selectAndSaveState from "./images/guide/selectAndSaveState.png";
 import groupAssessmentStart from "./images/guide/groupAssessmentStart.png";
-import groupAssessmentSubmit from "./images/guide/groupAssessmentSubmit.png";
 
 import chooseState from "./images/guide/full/1-1-chooseState.png";
 import downloadingStateData from "./images/guide/full/1-2-downloadingStateData.png";

@@ -14,6 +14,8 @@ import Kayakalp from "../images/kayakalp.png";
 import Musqan from "../images/musqan.png";
 import Github from "../images/github.png";
 import OpenSource from "../images/opensource.png";
+import GetStarted from "../components/cta/GetStarted";
+import ImageSlider from "../components/gallery/ImageSlider";
 
 const cards = [
     {
@@ -73,6 +75,7 @@ export default () => {
                   primaryButtonText={"Download Mobile App"}
                   watchVideoButtonText={"How it Works"}/>
             <Programs cards={cards}/>
+            <ImageSlider />
             <Features
                 subheading={<Subheading>Features</Subheading>}
                 heading={
@@ -81,8 +84,10 @@ export default () => {
                 description={"Quality assessment, Data collection, Analysis, Mentoring"}
                 cards={gunakFeatures}
             />
-            <Technology subheading="" headingHtmlComponent="Gunak Software" description="Gunak has been developed completely using open source frameworks and components."
+            <Technology subheading="" headingHtmlComponent="GUNAK Software" description="Gunak has been developed completely using open source frameworks and components."
                         cards={techCards} cardLinkText="" linkText="Get Source Code" linkUrl="https://github.com/nhsrc"/>
+            <GetStarted text="Need more help, contact technical support" primaryLinkText="Report an issue"
+                        primaryLinkUrl="https://gunaknhsrc.freshdesk.com/support/tickets/new" secondaryLinkText="Contact NHSRC"/>
             <Footer/>
         </AnimationRevealPage>
     );

@@ -90,20 +90,36 @@ export default ({roundedHeaderButton = false, logoLink, links, className, collap
 
     return (
         <Header className={className || "header-light"}>
-            <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
-                {logoLink}
-                {links}
-            </DesktopNavLinks>
-
-            <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
-                {logoLink}
-                <MobileNavLinks initial={{x: "150%", display: "none"}} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
+            <div style={{display: "flex", flexDirection: "column", width: "100%"}}>
+                <div style={{flexDirection: "row", display: "flex", justifyContent: 'space-between', marginBottom: 20}}>
+                    <div style={{flexDirection: "row", display: "flex", width: "70%", alignItems: "center"}}>
+                        <a href="https://nhsrcindia.org" target="_blank"><img alt="Logo" src="https://gunak.nhsrcindia.org/dashboard/static/nhsrc.png"/></a>
+                        <div style={{marginLeft: 10}}>
+                            <a href="https://nhsrcindia.org" target="_blank"><h1 style={{color: "#000"}}>NATIONAL HEALTH SYSTEMS RESOURCE CENTRE</h1></a>
+                            <a href="https://nhsrcindia.org" target="_blank"><h3 style={{color: "#000"}}>Technical Support Institute with National Health Mission</h3></a>
+                        </div>
+                    </div>
+                    <div style={{flexDirection: "row", display: "flex"}}>
+                        <img alt="Logo" src="https://gunak.nhsrcindia.org/dashboard/static/india.png" style={{marginRight: 5, width: 60}}/>
+                        <img alt="Logo" src="https://gunak.nhsrcindia.org/dashboard/static/nhm.png" height={80}/>
+                    </div>
+                </div>
+                <hr style={{marginBottom: 20}}/>
+                <DesktopNavLinks css={collapseBreakpointCss.desktopNavLinks}>
+                    {logoLink}
                     {links}
-                </MobileNavLinks>
-                <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
-                    {showNavLinks ? <CloseIcon tw="w-6 h-6"/> : <MenuIcon tw="w-6 h-6"/>}
-                </NavToggle>
-            </MobileNavLinksContainer>
+                </DesktopNavLinks>
+
+                <MobileNavLinksContainer css={collapseBreakpointCss.mobileNavLinksContainer}>
+                    {logoLink}
+                    <MobileNavLinks initial={{x: "150%", display: "none"}} animate={animation} css={collapseBreakpointCss.mobileNavLinks}>
+                        {links}
+                    </MobileNavLinks>
+                    <NavToggle onClick={toggleNavbar} className={showNavLinks ? "open" : "closed"}>
+                        {showNavLinks ? <CloseIcon tw="w-6 h-6"/> : <MenuIcon tw="w-6 h-6"/>}
+                    </NavToggle>
+                </MobileNavLinksContainer>
+            </div>
         </Header>
     );
 };
