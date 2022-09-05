@@ -4,6 +4,8 @@ start:
 install:
 	yarn install
 
+deps: install
+
 restart-apache:
 	sudo apachectl restart
 

@@ -179,7 +179,7 @@ const topics = [
     },
     {
         heading: "Submit assessment in a group",
-        description: "When there are multiple assessors, performing assessment of the same facility, you can divide multiple departments among yourself and still create single assessment. Please follow the steps below to understand how this can be done",
+        description: "When there are multiple assessors, performing assessment of the same facility, you can divide multiple departments among yourself and still create single assessment. Please follow the steps below to understand how this can be done. Please note that if you are using different assessment programs (like LAQSHYA and NQAS), or different assessment types (like State and External) then the merging of assessments wouldn't happen - as they will are separate assessment.",
         steps: [
             {
                 imageSrc: groupAssessmentStart,
